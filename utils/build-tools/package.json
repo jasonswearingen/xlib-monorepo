@@ -1,0 +1,19 @@
+{
+  "name": "build-tools",
+  "version": "0.0.1",
+  "description": "toolchain for this monorepo",
+  "bin": {
+    "my-build": "lib/my-build.js",
+    "my-bulk-command": "lib/my-bulk-command.js"
+  },
+  "scripts": {
+    "build": "heft test --clean",
+    "watch": "heft build --clean ; heft test --watch",
+    "my-bulk-command": ""
+  },
+  "devDependencies": {
+    "@rushstack/heft": "^0.4.3",
+    "@types/jest": "^26.0.9",
+    "typescript": "^4.0.0-beta"
+  }
+}

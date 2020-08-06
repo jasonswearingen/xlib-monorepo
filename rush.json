@@ -417,6 +417,11 @@
       "packageName": "verify-node",
       "projectFolder": "example-apps/verify-node",
       "reviewCategory": "example-apps"
+    },
+    {
+      "packageName": "build-tools",
+      "projectFolder": "utils/build-tools",
+      "reviewCategory": "utils"
     }
   ]
 }
