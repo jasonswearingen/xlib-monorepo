@@ -1,4 +1,5 @@
 dependencies:
+  '@rush-temp/verify-node': 'file:projects/verify-node.tgz'
   '@rush-temp/xlib': 'file:projects/xlib.tgz'
   '@rushstack/eslint-config': 1.0.3_c93c38aa5ff5d1b534c83ffc87d810d4
   '@rushstack/heft': 0.4.3
@@ -7206,6 +7207,24 @@ packages:
       commander: 2.20.3
     resolution:
       integrity: sha512-DUOKC/IhbkdLKKiV89gw9DUauTV8U/8yJl1sjf6MtDmzevLKOF2duNJ495S3MFVjqZarr+qNGCPbkg4mu4PpLw==
+  'file:projects/verify-node.tgz':
+    dependencies:
+      '@rushstack/eslint-config': 1.0.3_c93c38aa5ff5d1b534c83ffc87d810d4
+      '@rushstack/heft': 0.4.3
+      '@types/jest': 26.0.8
+      '@types/node': 14.0.27
+      '@typescript-eslint/eslint-plugin': 3.8.0_be4e70d26b8f3ae6bf3604118fd707c7
+      '@typescript-eslint/parser': 3.8.0_c93c38aa5ff5d1b534c83ffc87d810d4
+      eslint: 7.6.0
+      eslint-plugin-jest: 23.20.0_c93c38aa5ff5d1b534c83ffc87d810d4
+      eslint-plugin-react: 7.20.5_eslint@7.6.0
+      typescript: 4.0.0-dev.20200803
+    dev: false
+    name: '@rush-temp/verify-node'
+    resolution:
+      integrity: sha512-y5d3kmeGkpZLrqf7XJ/5VSS8FbXsl6A9xjwkVE41p8IXCk7735rgV4MBy3ECDp390VktR231NNF9lzlKDtw95w==
+      tarball: 'file:projects/verify-node.tgz'
+    version: 0.0.0
   'file:projects/xlib.tgz':
     dependencies:
       '@rushstack/eslint-config': 1.0.3_c93c38aa5ff5d1b534c83ffc87d810d4
@@ -7224,7 +7243,9 @@ packages:
       integrity: sha512-7syBAEH7sRvPogGxd1FzEM/iRsEbps1ozn3mEgmnzzxQ16d7qcRG3DLdejb8PIgBT0qtsHuuXzUHVAGXDM2+IA==
       tarball: 'file:projects/xlib.tgz'
     version: 0.0.0
+registry: ''
 specifiers:
+  '@rush-temp/verify-node': 'file:./projects/verify-node.tgz'
   '@rush-temp/xlib': 'file:./projects/xlib.tgz'
   '@rushstack/eslint-config': ^1.0.3
   '@rushstack/heft': ^0.4.2

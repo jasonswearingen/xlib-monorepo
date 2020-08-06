@@ -12,6 +12,7 @@
 		"inlineSources": true,
 		"strictNullChecks": true,
 		"noUnusedLocals": true,
+		"strict": true,
 		"types": [
 			"node",
 			"jest"

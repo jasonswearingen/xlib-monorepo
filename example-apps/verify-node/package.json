@@ -8,7 +8,7 @@
     "start": "node lib/_main.js",
     "build": "heft test --clean",
     "heft": "heft",
-    "watch": "heft build --clean ; heft test --watch"
+    "watch": "heft build --clean ; CI=true heft test --watch"
   },
   "author": "",
   "license": "ISC",
@@ -23,5 +23,8 @@
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-react": "^7.20.5",
     "typescript": "^4.0.0-beta"
+  },
+  "dependencies": {
+    "xlib": "~0.0.1"
   }
 }

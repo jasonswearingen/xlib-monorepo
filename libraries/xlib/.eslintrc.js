@@ -47,6 +47,11 @@ module.exports = {
 		"semi": [
 			"error",
 			"never"
-		]
+		],
+
+		//https://github.com/typescript-eslint/typescript-eslint/blob/v3.4.0/packages/eslint-plugin/docs/rules/typedef.md
+		"@typescript-eslint/typedef": "off",//use tsconfig strict errors instead			
+
+
 	}
 }
