@@ -1,0 +1,12 @@
+{
+  "name": "@xlib/eslint-config",
+  "version": "0.0.1",
+  "description": "default ruleset for eslint",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "",
+    "build": ""
+  },
+  "author": "",
+  "license": "MIT"
+}

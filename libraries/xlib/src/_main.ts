@@ -1,6 +1,6 @@
 console.log( "Hello, worlds" )
 
-export const hello = "world rebuild 3" + __filename
+export const hello = "world rebuild 4"
 
 
 

@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@xlib/build-tools": "workspace:~0.0.1",
     "@rushstack/eslint-config": "^1.0.3",
     "@rushstack/heft": "^0.4.2",
     "@types/jest": "26.0.8",
@@ -23,8 +24,5 @@
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-react": "^7.20.5",
     "typescript": "^4.0.0-beta"
-  },
-  "dependencies": {
-    "build-tools": "~0.0.1"
   }
 }

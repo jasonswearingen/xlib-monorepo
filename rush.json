@@ -102,7 +102,7 @@
      *
      * This option is experimental. The default value is false.
      */
-    // "useWorkspaces": true
+    "useWorkspaces": true
   },
   /**
    * Older releases of the Node.js engine may be missing features required by your system.
@@ -414,13 +414,18 @@
       "reviewCategory": "npm-packages"
     },
     {
-      "packageName": "verify-node",
+      "packageName": "@xlib/verify-node",
       "projectFolder": "example-apps/verify-node",
       "reviewCategory": "example-apps"
     },
     {
-      "packageName": "build-tools",
+      "packageName": "@xlib/build-tools",
       "projectFolder": "utils/build-tools",
+      "reviewCategory": "utils"
+    },
+    {
+      "packageName": "@xlib/eslint-config",
+      "projectFolder": "utils/eslint-config",
       "reviewCategory": "utils"
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "name": "build-tools",
+  "name": "@xlib/build-tools",
   "version": "0.0.1",
   "description": "toolchain for this monorepo",
   "bin": {
@@ -12,8 +12,15 @@
     "my-bulk-command": ""
   },
   "devDependencies": {
-    "@rushstack/heft": "^0.4.3",
-    "@types/jest": "^26.0.9",
+    "@rushstack/eslint-config": "^1.0.3",
+    "@rushstack/heft": "^0.4.2",
+    "@types/jest": "26.0.8",
+    "@types/node": "^14.0.27",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-react": "^7.20.5",
     "typescript": "^4.0.0-beta"
   }
 }
