@@ -412,6 +412,11 @@
       "packageName": "xlib",
       "projectFolder": "libraries/xlib",
       "reviewCategory": "npm-packages"
+    },
+    {
+      "packageName": "verify-node",
+      "projectFolder": "example-apps/verify-node",
+      "reviewCategory": "example-apps"
     }
   ]
 }

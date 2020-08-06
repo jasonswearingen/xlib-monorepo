@@ -1,0 +1,1 @@
+{"version":3,"file":"_main.js","sourceRoot":"","sources":["../../../src/_main.ts"],"names":[],"mappings":";;;AAAA,OAAO,CAAC,GAAG,CAAE,eAAe,CAAE,CAAA;AAE9B,SAAgB,CAAC;AAEjB,CAAC;AAFD,cAEC","sourcesContent":["console.log( \"Hello, worlds\" )\n\nexport function f(): void { // neeeeeee\n\n}\n\n\n\n"]}
