@@ -20,6 +20,9 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const xlib = __importStar(require("xlib"));
+;
+;
+;
 const x = {};
 (() => { return "hi"; })();
 describe("Example Test", () => {

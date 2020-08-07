@@ -4,5 +4,6 @@
 		"titleBar.activeBackground": "#840D14",
 		"titleBar.activeForeground": "#FFFBFB",
 		"editor.background": "#840D1405",
-	}
+	},
+	"eslint.packageManager": "pnpm"
 }
