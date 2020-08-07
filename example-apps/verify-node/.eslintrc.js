@@ -6,4 +6,7 @@ module.exports = {
 	"extends": [
 		"@xlib/eslint-config",
 	],
+	"parserOptions": {
+		tsconfigRootDir: __dirname
+	},
 }
