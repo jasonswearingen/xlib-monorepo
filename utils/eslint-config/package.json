@@ -5,8 +5,18 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "",
-    "build": ""
+    "build": "",
+    "my-bulk-command": ""
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@rushstack/eslint-config": "^1.0.3",
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
+    "eslint": "^7.6.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-react": "^7.20.5",
+    "typescript": "^4.0.0-beta"
+  }
 }
