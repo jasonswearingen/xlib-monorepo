@@ -3,11 +3,11 @@ require("@rushstack/eslint-config/patch/modern-module-resolution")
 
 module.exports = {
 	"$schema": "http://json.schemastore.org/eslintrc",
-	//"root": true,
+	//"root": true,  //no impact?
 	"extends": [
 		"@xlib/eslint-config"
 	],
 	"parserOptions": {
-		"tsconfigRootDir": __dirname
+		"tsconfigRootDir": __dirname //required to find the tsconfig.json
 	}
 }

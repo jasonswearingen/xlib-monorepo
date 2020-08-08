@@ -1,13 +1,8 @@
-import * as xlib from "xlib";
-;
-;
-;
-
-
+import * as xlib from "xlib"
 
 const x = {}
 
-	; ( () => { return 'hi' } )()
+	; ( () => { return "hi" } )()
 
 
 describe( "Example Test", () => {

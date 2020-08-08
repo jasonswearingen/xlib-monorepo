@@ -18,6 +18,7 @@ module.exports = {
 		"plugin:@typescript-eslint/eslint-recommended",
 		//"plugin:@typescript-eslint/recommended" //dupe
 	],
+	// ! not needed?
 	// "parser": "@typescript-eslint/parser",
 	// "parserOptions": {
 	// 	"ecmaFeatures": {
@@ -27,12 +28,14 @@ module.exports = {
 	// 	"sourceType": "module",
 	// 	//tsconfigRootDir: __dirname  //should be set in derived config file!
 	// },
+
 	"plugins": [
 		"react",
 		"jest",
 		//"@typescript-eslint" //dupe
 	],
 	overrides: [
+		//! typescript specific
 		{
 			files: ['*.ts', '*.tsx'],
 			"rules": {
