@@ -15,3 +15,11 @@ pnpm install -g @microsoft/rush
 
 
 - https://rushstack.io/pages/heft_tutorials/getting_started/
+
+
+# winmerge
+
+- https://sourceforge.net/projects/winmerge/
+- sourcetree integration:
+  - use custom settings:  ```-e -u -dl \"Mine\" -dm \"Merged\" -dr \"Theirs\" \"$LOCAL\" \"$MERGED\" \"$REMOTE\"```
+	  - from: https://community.atlassian.com/t5/Sourcetree-questions/Can-t-launch-external-merge-tool-WinMerge-on-Windows/qaq-p/315156#M31520
