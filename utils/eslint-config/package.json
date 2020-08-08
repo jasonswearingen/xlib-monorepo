@@ -18,5 +18,8 @@
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-react": "^7.20.5",
     "typescript": "^4.0.0-beta"
+  },
+  "dependencies": {
+    "json5": "^2.1.3"
   }
 }

@@ -11,6 +11,8 @@ importers:
       '@types/node': 14.0.27
       '@typescript-eslint/eslint-plugin': 3.8.0_be4e70d26b8f3ae6bf3604118fd707c7
       '@typescript-eslint/parser': 3.8.0_c93c38aa5ff5d1b534c83ffc87d810d4
+      '@xlib/build-tools': 'link:../../utils/build-tools'
+      '@xlib/eslint-config': 'link:../../utils/eslint-config'
       eslint: 7.6.0
       eslint-plugin-jest: 23.20.0_c93c38aa5ff5d1b534c83ffc87d810d4
       eslint-plugin-react: 7.20.5_eslint@7.6.0
@@ -22,11 +24,13 @@ importers:
       '@types/node': ^14.0.27
       '@typescript-eslint/eslint-plugin': ^3.8.0
       '@typescript-eslint/parser': ^3.8.0
+      '@xlib/build-tools': 'workspace:*'
+      '@xlib/eslint-config': 'workspace:*'
       eslint: ^7.6.0
       eslint-plugin-jest: ^23.20.0
       eslint-plugin-react: ^7.20.5
       typescript: ^4.0.0-beta
-      xlib: 'workspace:~0.0.1'
+      xlib: 'workspace:*'
   ../../libraries/xlib:
     devDependencies:
       '@rushstack/eslint-config': 1.0.3_c93c38aa5ff5d1b534c83ffc87d810d4
@@ -35,7 +39,8 @@ importers:
       '@types/node': 14.0.27
       '@typescript-eslint/eslint-plugin': 3.8.0_be4e70d26b8f3ae6bf3604118fd707c7
       '@typescript-eslint/parser': 3.8.0_c93c38aa5ff5d1b534c83ffc87d810d4
-      build-tools: 'link:../../utils/build-tools'
+      '@xlib/build-tools': 'link:../../utils/build-tools'
+      '@xlib/eslint-config': 'link:../../utils/eslint-config'
       eslint: 7.6.0
       eslint-plugin-jest: 23.20.0_c93c38aa5ff5d1b534c83ffc87d810d4
       eslint-plugin-react: 7.20.5_eslint@7.6.0
@@ -47,7 +52,8 @@ importers:
       '@types/node': ^14.0.27
       '@typescript-eslint/eslint-plugin': ^3.8.0
       '@typescript-eslint/parser': ^3.8.0
-      build-tools: 'workspace:~0.0.1'
+      '@xlib/build-tools': 'workspace:*'
+      '@xlib/eslint-config': 'workspace:*'
       eslint: ^7.6.0
       eslint-plugin-jest: ^23.20.0
       eslint-plugin-react: ^7.20.5
@@ -74,6 +80,26 @@ importers:
       eslint: ^7.6.0
       eslint-plugin-jest: ^23.20.0
       eslint-plugin-react: ^7.20.5
+      typescript: ^4.0.0-beta
+  ../../utils/eslint-config:
+    dependencies:
+      json5: 2.1.3
+    devDependencies:
+      '@rushstack/eslint-config': 1.0.3_c93c38aa5ff5d1b534c83ffc87d810d4
+      '@typescript-eslint/eslint-plugin': 3.8.0_be4e70d26b8f3ae6bf3604118fd707c7
+      '@typescript-eslint/parser': 3.8.0_c93c38aa5ff5d1b534c83ffc87d810d4
+      eslint: 7.6.0
+      eslint-plugin-jest: 23.20.0_c93c38aa5ff5d1b534c83ffc87d810d4
+      eslint-plugin-react: 7.20.5_eslint@7.6.0
+      typescript: 4.0.0-dev.20200803
+    specifiers:
+      '@rushstack/eslint-config': ^1.0.3
+      '@typescript-eslint/eslint-plugin': ^3.8.0
+      '@typescript-eslint/parser': ^3.8.0
+      eslint: ^7.6.0
+      eslint-plugin-jest: ^23.20.0
+      eslint-plugin-react: ^7.20.5
+      json5: ^2.1.3
       typescript: ^4.0.0-beta
 lockfileVersion: 5.1
 packages:
@@ -4425,7 +4451,6 @@ packages:
   /json5/2.1.3:
     dependencies:
       minimist: 1.2.5
-    dev: true
     engines:
       node: '>=6'
     hasBin: true
@@ -4762,7 +4787,6 @@ packages:
     resolution:
       integrity: sha512-yJHVQEhyqPLUTgt9B83PXu6W3rx4MvvHvSUvToogpwoGDOUQ+yDrR0HRot+yOCdCO7u4hX3pWft6kWBBcqh0UA==
   /minimist/1.2.5:
-    dev: true
     resolution:
       integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /mississippi/3.0.0:
