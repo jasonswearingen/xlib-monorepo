@@ -5,9 +5,10 @@ export const hello = "world rebuild 4"
 
 
 
-export function f(): void { // neeeeeee
+/** a test func returning hello name */
+export function f( name: string ): string {
 
-
+	return `hello ${ name }`
 
 }
 
