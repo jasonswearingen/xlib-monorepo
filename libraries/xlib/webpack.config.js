@@ -1,63 +1,11 @@
-'use strict';
+"use strict";
 
-//as per: https://github.com/microsoft/rushstack/blob/master/build-tests/heft-webpack-basic-test/webpack.config.js
+const { generateBuildWebpackConfiguration } = require("./webpack.shared.config");
 
-//a gppd example of settings:  https://github.com/microsoft/tsdoc/blob/master/playground/webpack.config.js
-
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-
-const CONFIG = {
-	reactUrl: {
-		dev: 'https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.development.js',
-		production: 'https://cdnjs.cloudflare.com/ajax/libs/react/16.4.2/umd/react.production.min.js'
-	},
-
-	reactDomUrl: {
-		dev: 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.development.js',
-		production: 'https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.4.2/umd/react-dom.production.min.js'
-	},
-
-	/** ts: : "dev" | "production" */
+// module.exports = function(env) {
+//   return generateBuildWebpackConfiguration(env);
+// }
+module.exports = generateBuildWebpackConfiguration({
 	runtimeEnv: "dev",
-	isProduction: false,
-
-}
-
-
-
-const path = require('path');
-
-module.exports = {
-	mode: 'development',
-	resolve: {
-		extensions: ['.js', '.jsx', '.json']
-	},
-	entry: {
-		'xlib-test': path.join(__dirname, 'lib-esm', '_main.js')
-	},
-	output: {
-		path: path.join(__dirname, "web", "dist"),
-		filename: '[name]_[contenthash].js'
-	},
-	externals: {
-		'react': 'React',
-		'react-dom': 'ReactDOM',
-		'react-dom/server': 'ReactDOMServer'
-	},
-	devtool: (CONFIG.isProduction) ? undefined : 'source-map',
-	plugins: [
-		new HtmlWebpackPlugin({
-			//inject the output at the bottom of the template <body>
-			inject: true,
-			template: `handlebars-loader!${path.join(__dirname, 'web', 'index.hbs')}`,
-			chunks: {},
-			templateParameters: {
-				scriptsToInclude: [
-					{ url: CONFIG.reactUrl[CONFIG.runtimeEnv] },
-					{ url: CONFIG.reactDomUrl[CONFIG.runtimeEnv] },
-				]
-			}
-		}),
-	]
-};
-
+	isProduction: false
+});
