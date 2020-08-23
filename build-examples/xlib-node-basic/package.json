@@ -1,5 +1,5 @@
 {
-  "name": "@xlib/verify-node",
+  "name": "@xlib/xlib-node-basic",
   "version": "0.0.1",
   "description": "verify xlib works with node",
   "main": "lib/_main.js",

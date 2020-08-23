@@ -414,9 +414,14 @@
       "reviewCategory": "npm-packages"
     },
     {
-      "packageName": "@xlib/verify-node",
-      "projectFolder": "example-apps/verify-node",
-      "reviewCategory": "example-apps"
+      "packageName": "@xlib/xlib-node-basic",
+      "projectFolder": "build-examples/xlib-node-basic",
+      "reviewCategory": "build-examples"
+    },
+    {
+      "packageName": "@xlib/xlib-browser-webpack-basic",
+      "projectFolder": "build-examples/xlib-browser-webpack-basic",
+      "reviewCategory": "build-examples"
     },
     {
       "packageName": "@xlib/build-tools",
