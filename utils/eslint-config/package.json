@@ -5,8 +5,7 @@
   "main": ".eslintrc.js",
   "scripts": {
     "test": "",
-    "build": "",
-    "my-bulk-command": ""
+    "build": ""
   },
   "author": "",
   "license": "MIT",

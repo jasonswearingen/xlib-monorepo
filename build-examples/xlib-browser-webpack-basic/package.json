@@ -8,7 +8,8 @@
     "start": "heft start",
     "build": "heft test --clean",
     "heft": "heft",
-    "watch": "heft build --clean ; heft test --watch"
+    "watch": "heft build --clean ; heft test --watch",
+    "eslint-fix": "eslint ./src/**/*.ts* --fix"
   },
   "author": "",
   "license": "MIT",
@@ -16,6 +17,7 @@
     "@rushstack/eslint-config": "^1.0.3",
     "@rushstack/heft": "^0.4.2",
     "@types/jest": "26.0.8",
+    "@types/node": "~14.6.0",
     "@types/react": "~16.9.46",
     "@types/react-dom": "^16.9.8",
     "@types/webpack-env": "~1.15.2",
@@ -30,11 +32,11 @@
     "html-webpack-plugin": "~4.3.0",
     "style-loader": "~1.2.1",
     "typescript": "~4.0.2",
-    "webpack": "~4.44.1",
-    "@types/node": "~14.6.0"
+    "webpack": "~4.44.1"
   },
   "dependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "xlib": "workspace:*"
   }
 }

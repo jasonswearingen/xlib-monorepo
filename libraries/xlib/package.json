@@ -8,7 +8,8 @@
   "scripts": {
     "build": "heft test --clean",
     "heft": "heft",
-    "watch": "heft build --clean ; heft test --watch"
+    "watch": "heft build --clean ; heft test --watch",
+    "eslint-fix": "eslint ./src/**/*.ts* --fix"
   },
   "author": "",
   "license": "ISC",

@@ -36,7 +36,8 @@
 				"*.tsx"
 			],
 			"excludedFiles": [
-				"*.d.ts"
+				//"*.d.ts",
+				"**/node_modules/**"
 			],
 			"rules": {
 				"indent": [
@@ -54,6 +55,12 @@
 				"semi": [
 					"error",
 					"never"
+				],
+				"no-unused-vars": [
+					"error",
+					{
+						"args": "none"
+					}
 				],
 				//https://github.com/typescript-eslint/typescript-eslint/blob/v3.4.0/packages/eslint-plugin/docs/rules/typedef.md
 				"@typescript-eslint/typedef": "off", //use tsconfig strict errors instead		
