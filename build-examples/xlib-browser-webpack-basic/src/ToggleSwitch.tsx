@@ -1,4 +1,6 @@
 import * as React from "react"
+import * as xlib from "xlib"
+
 
 /**
  * Slider positions for `ToggleSwitch`.
@@ -82,9 +84,12 @@ export class ToggleSwitch extends React.Component<IToggleSwitchProps, IToggleSwi
 
 		return (
 			<div style={ frameStyle } onClick={ this._onClickSlider }>
+				{xlib.hello }
 				<div style={ sliderStyle } />
 			</div>
 		)
+
+
 	}
 
 	// React event handlers should be represented as fields instead of methods to ensure the "this" pointer

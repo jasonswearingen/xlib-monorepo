@@ -1,6 +1,6 @@
 console.log( "Hello, worlds" )
 
-export const hello = "world rebuild 4"
+export const hello = 'world rebuild 42';
 
 
 /** a test func returning hello name */

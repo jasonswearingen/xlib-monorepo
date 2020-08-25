@@ -9,7 +9,6 @@
   "scripts": {
     "build": "heft test --clean",
     "watch": "heft build --clean ; heft test --watch",
-    "my-bulk-command": ""
   },
   "dependencies": {
     "@rushstack/eslint-config": "^1.0.3",
