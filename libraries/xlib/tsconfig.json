@@ -5,8 +5,7 @@
 		"outDir": "lib",
 		"types": [
 			"node",
-			"jest",
-			"webpack-env" //for webpack typings, as per: https://rushstack.io/pages/heft_tasks/webpack/		
+			"jest"
 		],
 		"lib": [
 			//"es5",

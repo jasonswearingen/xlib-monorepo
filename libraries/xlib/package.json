@@ -6,8 +6,6 @@
   "module": "lib-esm/_main.js",
   "typings": "lib/_main.d.ts",
   "scripts": {
-    "start-node": "node lib/_main.js",
-    "start": "heft start",
     "build": "heft test --clean",
     "heft": "heft",
     "watch": "heft build --clean ; heft test --watch"
@@ -26,10 +24,6 @@
     "eslint": "^7.6.0",
     "eslint-plugin-jest": "^23.20.0",
     "eslint-plugin-react": "^7.20.5",
-    "typescript": "~4.0.2",
-    "@types/webpack-env": "~1.15.2",
-    "handlebars-loader": "~1.7.1",
-    "html-webpack-plugin": "~4.3.0",
-    "handlebars": "~4.7.6"
+    "typescript": "~4.0.2"
   }
 }
