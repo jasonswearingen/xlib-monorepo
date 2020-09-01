@@ -414,6 +414,11 @@
       "reviewCategory": "npm-packages"
     },
     {
+      "packageName": "@xlib/browser-build",
+      "projectFolder": "libraries/xlib-browser-build",
+      "reviewCategory": "browser-packages"
+    },
+    {
       "packageName": "@xlib/xlib-node-basic",
       "projectFolder": "build-examples/xlib-node-basic",
       "reviewCategory": "build-examples"
