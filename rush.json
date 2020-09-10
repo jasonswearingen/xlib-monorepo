@@ -411,12 +411,12 @@
     {
       "packageName": "xlib",
       "projectFolder": "libraries/xlib",
-      "reviewCategory": "npm-packages"
+      "reviewCategory": "libraries"
     },
     {
       "packageName": "@xlib/browser-build",
       "projectFolder": "libraries/xlib-browser-build",
-      "reviewCategory": "browser-packages"
+      "reviewCategory": "browser-build"
     },
     {
       "packageName": "@xlib/xlib-node-basic",

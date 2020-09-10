@@ -13,19 +13,20 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@types/webpack-env": "~1.15.2",
+    "@rushstack/heft": "^0.4.2",
     "@types/jest": "26.0.8",
     "@types/node": "^14.0.27",
     "@types/react": "~16.9.46",
     "@types/react-dom": "^16.9.8",
-    "@rushstack/heft": "^0.4.2",
+    "@types/webpack-env": "~1.15.2",
     "@xlib/build-tools": "workspace:*",
     "@xlib/eslint-config": "workspace:*",
     "css-loader": "~4.2.1",
+    "eslint": "~7.6.0",
     "html-webpack-plugin": "~4.3.0",
     "style-loader": "~1.2.1",
-    "webpack": "~4.44.1",
-    "typescript": "~4.0.2"
+    "typescript": "~4.0.2",
+    "webpack": "~4.44.1"
   },
   "dependencies": {
     "react": "^16.13.1",

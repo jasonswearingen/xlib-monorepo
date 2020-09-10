@@ -9,7 +9,8 @@
   "pathsToDelete": [
     "dist",
     "lib",
-    "lib-esm"
+    "lib-esm",
+    "../xlib/lib-esm"
     //"temp"
   ]
 }

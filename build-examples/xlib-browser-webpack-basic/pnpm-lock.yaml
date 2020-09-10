@@ -2,14 +2,15 @@ dependencies:
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
 devDependencies:
-  '@types/node': 14.6.0
+  '@types/node': 14.6.3
+  '@types/react': 16.9.46
   '@types/react-dom': 16.9.8
 lockfileVersion: 5.1
 packages:
-  /@types/node/14.6.0:
+  /@types/node/14.6.3:
     dev: true
     resolution:
-      integrity: sha512-mikldZQitV94akrc4sCcSjtJfsTKt4p+e/s0AGscVA6XArQ9kFclP+ZiYUMnq987rc6QlYxXv/EivqlfSLxpKA==
+      integrity: sha512-pC/hkcREG6YfDfui1FBmj8e20jFU5Exjw4NYDm8kEdrW+mOh0T1Zve8DWKnS7ZIZvgncrctcNCXF4Q2I+loyww==
   /@types/prop-types/15.7.3:
     dev: true
     resolution:
@@ -90,7 +91,8 @@ packages:
     resolution:
       integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==
 specifiers:
-  '@types/node': ~14.6.0
+  '@types/node': ^14.0.27
+  '@types/react': ~16.9.46
   '@types/react-dom': ^16.9.8
   react: ^16.13.1
   react-dom: ^16.13.1

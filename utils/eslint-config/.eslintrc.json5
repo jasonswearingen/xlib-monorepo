@@ -57,13 +57,37 @@
 					"never"
 				],
 				"no-unused-vars": [
+					"off"
+				],
+				"eqeqeq": [
 					"error",
+					"smart"
+				],
+				"@typescript-eslint/no-unused-vars": [
+					"warn",
 					{
 						"args": "none"
 					}
 				],
+				"@typescript-eslint/no-floating-promises": [
+					//https://github.com/typescript-eslint/typescript-eslint/blob/v3.4.0/packages/eslint-plugin/docs/rules/no-floating-promises.md
+					"error",
+					{
+						"ignoreVoid": true
+					}
+				],
 				//https://github.com/typescript-eslint/typescript-eslint/blob/v3.4.0/packages/eslint-plugin/docs/rules/typedef.md
 				"@typescript-eslint/typedef": "off", //use tsconfig strict errors instead		
+				"no-void": [
+					//https://eslint.org/docs/rules/no-void
+					"error",
+					{
+						"allowAsStatement": true
+					}
+				],
+				"@rushstack/no-null": [
+					"off"
+				]
 			}
 		}
 	],

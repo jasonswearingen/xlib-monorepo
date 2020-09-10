@@ -12,6 +12,7 @@
 		"declarationMap": true,
 		"inlineSources": true,
 		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true, //required for exporting sub-modules!
 		"strictNullChecks": true,
 		"noUnusedLocals": true,
 		"types": [

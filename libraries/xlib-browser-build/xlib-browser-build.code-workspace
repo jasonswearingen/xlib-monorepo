@@ -10,8 +10,8 @@
 	"settings": {
 		"workbench.colorCustomizations": {
 			"activityBar.background": "#BB4229",
-			"titleBar.activeBackground": "#BB4F3A",
-			"titleBar.activeForeground": "#BBFCFC",
+			"titleBar.activeBackground": "#BB4229",
+			//"titleBar.activeForeground": "#BB4229",
 			"editor.background": "#BB422911"
 		}
 	}

@@ -1,6 +1,4 @@
 import * as React from "react"
-import * as xlib from "xlib"
-
 
 /**
  * Slider positions for `ToggleSwitch`.
@@ -35,6 +33,7 @@ export interface IToggleSwitchProps {
 	 */
 	onToggle?: ( sender: ToggleSwitch, args: IToggleEventArgs ) => void;
 }
+
 
 /**
  * Private state for ToggleSwitch.
@@ -82,9 +81,14 @@ export class ToggleSwitch extends React.Component<IToggleSwitchProps, IToggleSwi
 			sliderStyle.marginRight = "0px"
 		}
 
+
+		//const testKy = usePromise( callXlibKyTest() )
+
+		//testKy.loading ? "LOADING" : testKy.value
+
+
 		return (
 			<div style={ frameStyle } onClick={ this._onClickSlider }>
-				{xlib.hello }
 				<div style={ sliderStyle } />
 			</div>
 		)

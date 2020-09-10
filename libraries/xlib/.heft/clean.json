@@ -8,8 +8,8 @@
     */
   "pathsToDelete": [
     "dist",
-    "lib",
-    "lib-esm"
+    "lib"
+    //"lib-esm"
     //"temp"
   ]
 }

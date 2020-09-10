@@ -6,8 +6,7 @@
   "scripts": {
     "build": "heft build --clean",
     "heft": "heft",
-    "watch": "heft build --clean ; heft build --watch",
-    "eslint-fix": "eslint ./src/**/*.ts* --fix"
+    "watch": "heft build --clean ; heft build --watch"
   },
   "author": "",
   "license": "ISC",

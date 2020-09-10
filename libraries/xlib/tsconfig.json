@@ -5,7 +5,9 @@
 		"outDir": "lib",
 		"types": [
 			"node",
-			"jest"
+			"jest",
+			//"ky-universal",
+			//"ky"
 		],
 		"lib": [
 			//"es5",
