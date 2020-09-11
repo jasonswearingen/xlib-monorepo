@@ -424,6 +424,11 @@
       "reviewCategory": "build-examples"
     },
     {
+      "packageName": "ts-debug-test",
+      "projectFolder": "build-examples/ts-debug-test",
+      "reviewCategory": "build-examples"
+    },
+    {
       "packageName": "@xlib/xlib-browser-webpack-basic",
       "projectFolder": "build-examples/xlib-browser-webpack-basic",
       "reviewCategory": "build-examples"
