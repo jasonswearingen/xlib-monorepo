@@ -6,14 +6,17 @@
   "scripts": {
     "build": "heft build --clean",
     "heft": "heft",
-    "watch": "heft build --clean ; heft build --watch"
+    "watch": "heft build --clean ; heft build --watch",
+    "eslint-fix": "eslint ./src/**/*.ts* --fix",
+    "dep-check": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
+    "dep-upgrade": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@rushstack/heft": "^0.4.2",
-    "@types/jest": "26.0.8",
-    "@types/node": "^14.0.27",
+    "@rushstack/heft": "~0.11.1",
+    "@types/jest": "~26.0.13",
+    "@types/node": "~14.10.1",
     "@xlib/build-tools": "workspace:*",
     "@xlib/eslint-config": "workspace:*"
   }

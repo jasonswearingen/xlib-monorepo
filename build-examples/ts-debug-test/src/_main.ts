@@ -31,10 +31,10 @@
 
 //console.log( xlib.hello )
 
-console.log( "first" );
+console.log( "first" )
 
 
-console.log( "hi from verify-node watched two hmmhmm...." );
+console.log( "hi from verify-node watched two hmmhmm...." )
 
 export function f(): void { // neeeeeee
 
