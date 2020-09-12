@@ -31,9 +31,10 @@ import * as xlib from "xlib"
 
 const result = xlib.f( "hello papa" )
 
+
 console.log( result )
 
-console.log( "first" );
+console.log( "first" )
 
 
 

@@ -7,9 +7,11 @@
     "build": "heft build --clean",
     "heft": "heft",
     "watch": "heft build --clean ; heft build --watch",
-    "eslint-fix": "eslint ./src/**/*.ts* --fix",
-    "dep-check": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
-    "dep-upgrade": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all"
+    "eslint-fix": "",
+    "dep-check-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
+    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
+    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange"
   },
   "author": "",
   "license": "ISC",
