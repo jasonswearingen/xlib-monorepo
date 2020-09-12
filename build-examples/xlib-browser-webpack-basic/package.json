@@ -8,7 +8,9 @@
     "build": "heft test --clean",
     "heft": "heft",
     "watch": "heft build --clean ; heft test --watch",
-    "eslint-fix": "eslint ./src/**/*.ts* --fix"
+    "eslint-fix": "eslint ./src/**/*.ts* --fix",
+    "dep-check": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
+    "dep-upgrade": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all"
   },
   "author": "",
   "license": "MIT",
@@ -21,9 +23,9 @@
     "@types/webpack-env": "~1.15.2",
     "@xlib/build-tools": "workspace:*",
     "@xlib/eslint-config": "workspace:*",
-    "css-loader": "~4.2.1",
+    "css-loader": "4.3.0",
     "eslint": "~7.8.1",
-    "html-webpack-plugin": "~4.3.0",
+    "html-webpack-plugin": "4.4.1",
     "style-loader": "~1.2.1",
     "typescript": "~4.0.2",
     "webpack": "~4.44.1"
