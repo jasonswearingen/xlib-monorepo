@@ -424,7 +424,7 @@
       "reviewCategory": "build-examples"
     },
     {
-      "packageName": "ts-debug-test",
+      "packageName": "@xlib/ts-debug-test",
       "projectFolder": "build-examples/ts-debug-test",
       "reviewCategory": "build-examples"
     },

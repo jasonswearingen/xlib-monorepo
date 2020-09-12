@@ -2,7 +2,15 @@
 	"$schema": "http://json.schemastore.org/tsconfig",
 	"extends": "./node_modules/@xlib/build-tools/includes/tsconfig-node.json",
 	"compilerOptions": {
-		"outDir": "lib"
+		"outDir": "lib",
+		// "target": "es5",
+		// "module": "commonjs",
+		// "sourceMap": true,
+		// "types": [
+		// 	"node",
+		// 	"jest"
+		// ],
+		// "esModuleInterop": true,
 	},
 	"include": [
 		"src/**/*.ts",
@@ -11,7 +19,7 @@
 	"exclude": [
 		"node_modules",
 		"lib"
-	]
+	],
 	// "$schema": "http://json.schemastore.org/tsconfig",
 	// "compilerOptions": {
 	// 	"outDir": "lib",
@@ -20,9 +28,9 @@
 	// 	],
 	// 	"composite": true,
 	// 	"forceConsistentCasingInFileNames": true,
-	// 	"declaration": true,
-	// 	"sourceMap": true,
-	// 	"declarationMap": true,
+	//"declaration": true,
+	//"sourceMap": true,
+	//"declarationMap": true,
 	// 	"inlineSources": true,
 	// 	"strictNullChecks": true,
 	// 	"noUnusedLocals": true,

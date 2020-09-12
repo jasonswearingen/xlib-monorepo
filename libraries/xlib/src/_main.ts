@@ -10,7 +10,7 @@ export const shmaybe = "iz good?"
 /** a test func returning hello name */
 export function f( name: string ): string {
 
-	return `hello ${ name }`
+	return `hellos ${ name }`
 
 }
 

@@ -9,7 +9,7 @@
 			],
 			"group": "build",
 			"label": "npm: watch",
-			"detail": "heft build --clean ; CI=true heft test --watch",
+			"detail": "heft build --clean ;CI=true heft test --watch",
 			"isBackground": true
 		}
 	]

@@ -12,11 +12,8 @@
 				"<node_internals>/**"
 			],
 			"program": "${workspaceFolder}/lib/_main.js",
-			//use outFiles to allow debugging other projects in this monorepo: https://stackoverflow.com/a/43152616
 			"outFiles": [
-				//"${workspaceFolder}/**/*.js",
-				"!**/node_modules/**/*.js",
-				"**/*.js"
+				"${workspaceFolder}/**/*.js"
 			]
 		}
 	]

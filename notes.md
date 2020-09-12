@@ -7,6 +7,7 @@ Typescript based monorepo build system.
 ```bash
 npm install -g pnpm
 pnpm install -g @microsoft/rush
+pnpm install -g npm-check-updates #per-project command added in config/rush/command-line.json and each package.json
 
 ```
 
