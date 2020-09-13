@@ -7,10 +7,10 @@
     "test": "",
     "build": "",
     "eslint-fix": "",
-    "dep-check-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
-    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check-major": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2 --target minor",
     "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
-    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange"
+    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange --target minor"
   },
   "author": "",
   "license": "MIT",
@@ -18,8 +18,8 @@
     "@rushstack/eslint-config": "~1.3.0",
     "@typescript-eslint/eslint-plugin": "~4.1.0",
     "@typescript-eslint/parser": "~4.1.0",
-    "eslint": "~7.8.1",
-    "eslint-plugin-jest": "~24.0.0",
+    "eslint": "7.9.0",
+    "eslint-plugin-jest": "24.0.1",
     "eslint-plugin-react": "~7.20.6",
     "typescript": "~4.0.2"
   },

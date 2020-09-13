@@ -15,47 +15,10 @@ export function f( name: string ): string {
 }
 
 
-//import * as kyu from "ky-universal"
-
-//type TestKY = typeof<kyu>;
-
-//export const _ky = kyu as ( typeof( kyu ));
+import * as net from "./net"
+export { net }
 
 
-
-import ky from "ky-universal"
-export { ky }
-
-
-
-
-//export import ky = require( "ky-universal" )
-
-//export const _ky = ky
-
-
-// const call = ( async (): Promise<void> => {
-
-// 	const res = await ky( "https://httpbin.org/bytes/16" )
-
-
-// } )
-
-// void call()
-
-
-
-
-
-
-
-// 	( async () => {
-// 		const { body } = await ky( 'https://httpbin.org/bytes/16' );
-// 		const { value } = await body.getReader().read();
-// 		const result = new TextDecoder( 'utf-8' ).decode( value );
-
-// 		// …
-// 	} )();
 
 
 

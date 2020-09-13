@@ -8,10 +8,10 @@
     "heft": "heft",
     "watch": "heft build --clean ; heft build --watch",
     "eslint-fix": "",
-    "dep-check-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
-    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check-major": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2 --target minor",
     "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
-    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange"
+    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange --target minor"
   },
   "author": "",
   "license": "ISC",

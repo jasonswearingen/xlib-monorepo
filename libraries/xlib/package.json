@@ -11,11 +11,12 @@
     "build": "heft test --clean",
     "heft": "heft",
     "watch": "heft build --clean ;CI=true heft test --watch",
+    "test": "heft test",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
-    "dep-check-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
-    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check-major": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2 --target minor",
     "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
-    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange"
+    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange --target minor"
   },
   "author": "",
   "license": "ISC",
@@ -24,10 +25,13 @@
     "@types/jest": "~26.0.13",
     "@types/node": "~14.10.1",
     "@xlib/build-tools": "workspace:*",
-    "@xlib/eslint-config": "workspace:*"
+    "@xlib/eslint-config": "workspace:*",
+    "eslint": "^7.9.0",
+    "@rushstack/eslint-config": "~1.3.0"
   },
   "dependencies": {
-    "ky-universal": "~0.8.1",
-    "ky": "~0.23.0"
+    "ky": "0.23.0",
+    "ky-universal": "0.8.1",
+    "web-streams-polyfill": "3.0.0"
   }
 }

@@ -10,10 +10,10 @@
     "heft": "heft",
     "watch": "heft build --clean ; CI=true heft test --watch",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
-    "dep-check-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused",
-    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check-major": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
+    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2 --target minor",
     "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
-    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange"
+    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange --target minor"
   },
   "author": "",
   "license": "ISC",
@@ -23,7 +23,7 @@
     "@types/jest": "26.0.13",
     "@types/node": "^14.10.1",
     "@xlib/build-tools": "workspace:*",
-    "eslint": "7.8.1",
+    "eslint": "7.9.0",
     "@xlib/eslint-config": "workspace:*"
   },
   "dependencies": {
