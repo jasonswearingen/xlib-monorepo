@@ -13,10 +13,8 @@
     "watch": "heft build --clean ;CI=true heft test --watch",
     "test": "heft test",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
-    "dep-check-major": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2",
-    "dep-check": "CI=true npm-check-updates --packageFile package.json --removeRange --errorLevel 2 --target minor",
-    "dep-upgrade-nc": "NPM_CHECK_INSTALLER=pnpm CI=true npm-check --skip-unused --update-all",
-    "dep-upgrade": "npm-check-updates --packageFile package.json --upgrade --removeRange --target minor"
+    "dep-check-major": "npm-check-updates --configFilePath ../../common/config",
+    "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor"
   },
   "author": "",
   "license": "ISC",

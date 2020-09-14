@@ -98,8 +98,8 @@
     {
       "commandKind": "bulk",
       "name": "dep-check",
-      "summary": "run npm-check: helper to check for updates to project dependencies",
-      "description": "helps to find out of date package dependencies",
+      "summary": "run npm-check-updates: shows semver minor/patch updates available",
+      "description": "To upgrade a package to latest: `rush dep-check --package PACKAGENAME --upgrade`.   To pick a specific version, switch to a project folder and run `rush add -p PACKAGE@VER -m`.  To ignore a package, edit the config file \"./common/config/.ncurc.js\".   ",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
@@ -108,24 +108,13 @@
     },
     {
       "commandKind": "bulk",
-      "name": "dep-upgrade",
-      "summary": "automatically upgrade all dependencies to their newest version",
-      "description": "if you don't want automatic, run 'npm-check' manually in the project folder",
+      "name": "dep-check-major",
+      "summary": "run npm-check-updates: also shows semver major upgrades",
+      "description": "see `dep-check` description for more info.",
       "safeForSimultaneousRushProcesses": true,
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
       "ignoreMissingScript": false,
-      "allowWarningsInSuccessfulBuild": false
-    },
-    {
-      "commandKind": "bulk",
-      "name": "ncu",
-      "summary": "automatically upgrade all dependencies to their newest version",
-      "description": "if you don't want automatic, run 'npm-check' manually in the project folder",
-      "safeForSimultaneousRushProcesses": true,
-      "enableParallelism": true,
-      "ignoreDependencyOrder": true,
-      "ignoreMissingScript": true,
       "allowWarningsInSuccessfulBuild": false
     },
     {
@@ -138,7 +127,6 @@
       "ignoreDependencyOrder": false,
       "ignoreMissingScript": true,
       "allowWarningsInSuccessfulBuild": false,
-      
     },
     // {
     //   /**
@@ -182,6 +170,47 @@
    * For example, you might define a "--production" parameter for the "rush build" command.
    */
   "parameters": [
+    {
+      /**
+       * (Required) Determines the type of custom parameter.
+       * A "flag" is a custom command-line parameter whose presence acts as an on/off switch.
+       */
+      "parameterKind": "flag",
+      /**
+       * (Required) The long name of the parameter.  It must be lower-case and use dash delimiters.
+       */
+      "longName": "--upgrade",
+      /**
+       * (Required) A long description to be shown in the command-line help.
+       *
+       * Whenever you introduce commands/parameters, taking a little time to write meaningful
+       * documentation can make a big difference for the developer experience in your repo.
+       */
+      "description": "Overwrite package file with latest upgraded versions",
+      /**
+       * (Required) A list of custom commands and/or built-in Rush commands that this parameter may
+       * be used with.  The parameter will be appended to the shell command that Rush invokes.
+       */
+      "associatedCommands": [
+        "dep-check",
+        "dep-check-major"
+      ]
+    },
+    {
+      /**
+       * (Required) Determines the type of custom parameter.
+       * A "string" is a custom command-line parameter whose value is a simple text string.
+       */
+      "parameterKind": "string",
+      "longName": "--filter",
+      "description": "Include only package names matching the given string, comma-or-space-delimited list, or /regex/",
+      "associatedCommands": [
+        "dep-check",
+        "dep-check-major"
+      ],
+      "argumentName": "PACKAGE_MATCHES",
+      "required": false
+    },
     // {
     //   /**
     //    * (Required) Determines the type of custom parameter.
