@@ -23,4 +23,16 @@ describe( "xlib.net unit tests", () => {
 			expect( result ).toEqual( "hello from the internet" )
 		} )
 	} )
+	describe( "gaxios", () => {
+		it( "basic network connectivity roundtrip", async () => {
+
+			const reqProm = net.gaxios.request<string>( {
+				url: "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=",
+			} )
+
+			const resp = await reqProm
+			const result = resp.data
+			expect( result ).toEqual( "hello from the internet" )
+		} )
+	} )
 } )
