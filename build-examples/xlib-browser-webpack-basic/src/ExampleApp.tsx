@@ -17,7 +17,7 @@ const callXlibKyTest = ( async (): Promise<string> => {
 	// 	return result
 	// }
 
-	const resp = await xlib.ky.get( "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=" )
+	const resp = await xlib.net.ky.get( "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=" )
 	const reader = await resp.body?.getReader().read()
 	if ( reader == null ) {
 		return "ERROR"
