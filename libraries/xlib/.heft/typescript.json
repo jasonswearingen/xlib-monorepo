@@ -37,7 +37,7 @@
    *
    * The default value is "lib".
    */
-	"emitFolderPathForJest": "lib"
+	//"emitFolderPathForJest": "lib"
 	/**
    * If set to "true", the TSlint task will not be invoked.
    */

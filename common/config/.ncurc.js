@@ -14,6 +14,6 @@ module.exports = {
 	"reject": [
 		"@types/node", // works: 14.0.27.  14.10.0 has a bug that doesn't work with webpack.
 	],
-	target: "greatest"
+	//target: "greatest"
 
 }

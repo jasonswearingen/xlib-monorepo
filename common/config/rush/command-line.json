@@ -104,7 +104,7 @@
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
       "ignoreMissingScript": false,
-      "allowWarningsInSuccessfulBuild": false
+      "allowWarningsInSuccessfulBuild": true
     },
     {
       "commandKind": "bulk",
@@ -115,7 +115,7 @@
       "enableParallelism": true,
       "ignoreDependencyOrder": true,
       "ignoreMissingScript": false,
-      "allowWarningsInSuccessfulBuild": false
+      "allowWarningsInSuccessfulBuild": true
     },
     {
       "commandKind": "bulk",
