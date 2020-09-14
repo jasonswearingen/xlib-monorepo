@@ -19,6 +19,12 @@ function createWebpackConfig({ production }) {
         {
           test: /\.css$/,
           use: [require.resolve('style-loader'), require.resolve('css-loader')]
+        },
+        {
+          //from https://github.com/googleapis/gaxios/blob/master/webpack.config.js
+          //needed to support gaxios
+          test: /node_modules\/https-proxy-agent\//,
+          use: "null-loader",
         }
       ]
     },
@@ -26,7 +32,7 @@ function createWebpackConfig({ production }) {
       app: path.join(__dirname, 'lib', 'index.js'),
 
       // Put these libraries in a separate vendor bundle
-      vendor: ['react', 'react-dom']
+      //vendor: ['react', 'react-dom']
     },
     output: {
       path: path.join(__dirname, 'dist'),
@@ -38,7 +44,18 @@ function createWebpackConfig({ production }) {
       new HtmlWebpackPlugin({
         template: 'assets/index.html'
       })
-    ]
+    ],
+
+    //from https://github.com/googleapis/gaxios/blob/master/webpack.config.js
+    //needed to support gaxios
+    node: {
+      child_process: 'empty',
+      fs: 'empty',
+      crypto: 'empty',
+      net: 'empty',
+      tls: 'empty',
+    }
+
   };
 
   return webpackConfig;

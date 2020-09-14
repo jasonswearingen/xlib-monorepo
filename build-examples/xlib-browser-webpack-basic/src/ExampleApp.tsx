@@ -17,13 +17,15 @@ const callXlibKyTest = ( async (): Promise<string> => {
 	// 	return result
 	// }
 
-	const resp = await xlib.net.ky.get( "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=" )
-	const reader = await resp.body?.getReader().read()
-	if ( reader == null ) {
-		return "ERROR"
-	}
-	const result = new TextDecoder( "utf-8" ).decode( reader.value )
-	return result
+	//const resp = await xlib.net.ky.get( "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=" )
+	//const 
+	//const reader = await resp.body?.getReader().read()
+	// if ( reader == null ) {
+	// 	return "ERROR"
+	// }
+	// const result = new TextDecoder( "utf-8" ).decode( reader.value )
+	// return result
+	return ( await xlib.net.gaxios.request<string>( { url: "https://httpbin.org/base64/aGVsbG8gZnJvbSB0aGUgaW50ZXJuZXQ=" } ) ).data
 
 } )
 
