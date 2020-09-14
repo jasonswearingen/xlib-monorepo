@@ -21,3 +21,14 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
 - documentation:  proper code documentation, auto-gen from source
 - doc site:  a documenation site with full text search and versioning
 - modern promise libary
+
+
+# development
+
+## env setup
+- core dev env
+  - install node 14.x
+  - ```npm install -g pnpm @microsoft/rush```
+- supplemental build tooling
+  -  ```npm install -g npm-check-updates```
+

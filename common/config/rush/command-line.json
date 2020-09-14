@@ -197,13 +197,20 @@
       ]
     },
     {
-      /**
-       * (Required) Determines the type of custom parameter.
-       * A "string" is a custom command-line parameter whose value is a simple text string.
-       */
       "parameterKind": "string",
       "longName": "--filter",
       "description": "Include only package names matching the given string, comma-or-space-delimited list, or /regex/",
+      "associatedCommands": [
+        "dep-check",
+        "dep-check-major"
+      ],
+      "argumentName": "PACKAGE_MATCHES",
+      "required": false
+    },
+    {
+      "parameterKind": "string",
+      "longName": "--reject",
+      "description": "Exclude package names matching the given string, comma-or-space-delimited list, or /regex/   Overrides default excludes found in \"./common/config/.ncurc.js\".  ",
       "associatedCommands": [
         "dep-check",
         "dep-check-major"
