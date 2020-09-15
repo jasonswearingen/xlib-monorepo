@@ -52,3 +52,7 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
 
 ## library extensibility / plugin architecture
 - https://www.npmjs.com/package/tapable
+
+## promises
+- probably can use native promises now (bluebird not needed): https://dev.to/blacksonic/what-does-javascript-promise-us-for-2020-4l1i
+

@@ -14,7 +14,8 @@
     "test": "heft test",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
     "dep-check-major": "npm-check-updates --configFilePath ../../common/config",
-    "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor"
+    "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor",
+    "doc-build":"heft test --clean; api-documenter markdown --input-folder temp --output-folder"
   },
   "author": "",
   "license": "ISC",

@@ -14,6 +14,7 @@
     "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor"
   },
   "dependencies": {
+    "@microsoft/api-extractor": "7.8.2-pr1796.0",
     "@rushstack/eslint-config": "~1.3.0",
     "@rushstack/heft": "0.13.0",
     "@types/jest": "~26.0.13",

@@ -6,8 +6,8 @@
 		"module": "commonjs", /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
 		//"moduleResolution": "node",
 		//"module": "commonjs",
-		"lib": [
-			"es2017"
+		"lib": [ //see: //see: https://www.typescriptlang.org/tsconfig#lib
+			"ESNext"
 		],
 		"types": [
 			"node",

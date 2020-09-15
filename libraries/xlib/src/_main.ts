@@ -2,8 +2,13 @@ console.log( "Hello, worlds" )
 
 export const hello = "world wtf?!!"
 
+/** the world always says
+ * @public
+ */
 export const goodbye = "world rebuild 42s"
 
+/** does it exist? 
+ * @beta */
 export const shmaybe = "iz good?"
 
 
@@ -18,8 +23,5 @@ export function f( name: string ): string {
 import * as net from "./net"
 export { net }
 
-
-
-
-
+//Promise.al
 

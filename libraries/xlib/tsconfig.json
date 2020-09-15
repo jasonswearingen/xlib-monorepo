@@ -9,14 +9,16 @@
 			//"ky-universal",
 			//"ky"
 		],
-		"lib": [
+		"lib": [  //see: https://www.typescriptlang.org/tsconfig#lib
 			//"es5",
-			"scripthost",
+			"ScriptHost",
 			// "es2015.collection",
-			// "es2015.promise",
+			//"es2015.promise",
 			// "es2015.iterable",
-			"dom",
-			"ES2017"
+			"DOM",
+			//"ES2017",
+			"ESNext",
+			"WebWorker",
 		]
 	},
 	"include": [
