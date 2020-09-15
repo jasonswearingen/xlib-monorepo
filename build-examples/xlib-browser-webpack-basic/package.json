@@ -15,7 +15,7 @@
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@rushstack/heft": "0.13.0",
+    "@rushstack/heft": "0.13.1",
     "@types/jest": "~26.0.13",
     "@types/node": "14.0.27",
     "@types/react": "16.9.49",

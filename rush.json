@@ -416,7 +416,7 @@
     {
       "packageName": "@xlib/browser-build",
       "projectFolder": "libraries/xlib-browser-build",
-      "reviewCategory": "browser-build"
+      "reviewCategory": "browser-build",
     },
     {
       "packageName": "@xlib/xlib-node-basic",

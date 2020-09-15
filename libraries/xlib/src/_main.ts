@@ -22,6 +22,3 @@ export function f( name: string ): string {
 
 import * as net from "./net"
 export { net }
-
-//Promise.al
-

@@ -13,6 +13,7 @@ module.exports = {
 	/** ignore certain packages */
 	"reject": [
 		"@types/node", // works: 14.0.27.  14.10.0 has a bug that doesn't work with webpack.
+		"@mcrosoft/api-extractor", //7.8.2-pr1796.0 works.   →  7.9.15   has bug that doesn't work with local ```import * as X```
 	],
 	//target: "greatest"
 
