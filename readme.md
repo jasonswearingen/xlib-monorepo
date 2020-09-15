@@ -1,3 +1,4 @@
+# THIS IS AN R&D REPO
 monorepo doing R&D for the next version of ```xlib```
 
 work here will be ported to the current ```xlib``` repository once R&D has met the following goals:
@@ -30,5 +31,24 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
   - install node 14.x
   - ```npm install -g pnpm @microsoft/rush```
 - supplemental build tooling
-  -  ```npm install -g npm-check-updates```
+  -  ```npm install -g npm-check-updates @microsoft/api-extractor @microsoft/api-documenter```
 
+# REWRITE NOTES
+- date
+  - day.js probably (maybe luxon)
+- net io
+  - gaxios
+
+
+# scratch
+
+## isomorphic research notes
+- https://source.coveo.com/2016/05/11/isomorphic-typescript-ava-w-coverage/
+- https://jamesmonger.com/2019/09/10/super-robust-api-with-isomorphic-typescript.html
+- https://github.com/happygrammer/isomorphic-typescript-starter
+- https://github.com/ericmasiello/isomorphic-typescript-react-redux-starter
+- https://hackernoon.com/building-isomorphic-javascript-packages-1ba1c7e558c5
+- https://zellwk.com/blog/publishing-npm-packages-that-can-be-used-in-browsers-and-node/
+
+## library extensibility / plugin architecture
+- https://www.npmjs.com/package/tapable
