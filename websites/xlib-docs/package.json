@@ -5,7 +5,8 @@
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
-    "build": "docusaurus build",
+    "build": "api-documenter markdown --input-folder ../../libraries/xlib/dist/docs/input --output-folder ./docs/api && docusaurus build",
+    "dbuild": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
@@ -20,7 +21,9 @@
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "react": "^16.8.4",
-    "react-dom": "^16.8.4"
+    "react-dom": "^16.8.4",
+    "url-loader": "^4.1.0",
+    "xlib": "workspace:*"
   },
   "browserslist": {
     "production": [
