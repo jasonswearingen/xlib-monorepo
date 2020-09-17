@@ -416,7 +416,12 @@
     {
       "packageName": "@xlib/browser-build",
       "projectFolder": "utils/xlib-browser-build",
-      "reviewCategory": "libraries",
+      "reviewCategory": "libraries"
+    },
+    {
+      "packageName": "@xlib/xlib-docs",
+      "projectFolder": "websites/xlib-docs",
+      "reviewCategory": "websites"
     },
     {
       "packageName": "@xlib/xlib-node-basic",
