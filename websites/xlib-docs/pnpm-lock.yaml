@@ -5,6 +5,7 @@ dependencies:
   clsx: 1.1.1
   react: 16.13.1
   react-dom: 16.13.1_react@16.13.1
+  url-loader: 4.1.0
 lockfileVersion: 5.1
 packages:
   /@algolia/cache-browser-local-storage/4.5.1:
@@ -10260,6 +10261,22 @@ packages:
     dev: false
     resolution:
       integrity: sha1-2pN/emLiH+wf0Y1Js1wpNQZ6bHI=
+  /url-loader/4.1.0:
+    dependencies:
+      loader-utils: 2.0.0
+      mime-types: 2.1.27
+      schema-utils: 2.7.1
+    dev: false
+    engines:
+      node: '>= 10.13.0'
+    peerDependencies:
+      file-loader: '*'
+      webpack: ^4.0.0 || ^5.0.0
+    peerDependenciesMeta:
+      file-loader:
+        optional: true
+    resolution:
+      integrity: sha512-IzgAAIC8wRrg6NYkFIJY09vtktQcsvU8V6HhtQj9PTefbYImzLB1hufqo4m+RyM5N3mLx5BqJKccgxJS+W3kqw==
   /url-loader/4.1.0_file-loader@6.1.0+webpack@4.44.1:
     dependencies:
       file-loader: 6.1.0_webpack@4.44.1
@@ -10829,3 +10846,4 @@ specifiers:
   clsx: ^1.1.1
   react: ^16.8.4
   react-dom: ^16.8.4
+  url-loader: ^4.1.0

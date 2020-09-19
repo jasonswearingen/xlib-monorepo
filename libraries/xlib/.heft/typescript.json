@@ -14,23 +14,23 @@
    * If provided, emit these module kinds in addition to the modules specified in the tsconfig.
    * Note that this option only applies to the main tsconfig.json configuration.
    */
-	// "additionalModuleKindsToEmit": [
-	// 	// {
-	// 	//   /**
-	// 	//    * (Required) Must be one of "commonjs", "amd", "umd", "system", "es2015", "esnext"
-	// 	//    */
-	// 	//  "moduleKind": "amd",
-	// 	//
-	// 	//   /**
-	// 	//    * (Required) The path where the output will be written.
-	// 	//    */
-	// 	//    "outFolderPath": "lib-amd"
-	// 	// }
-	// 	{
-	// 		"moduleKind": "esnext",
-	// 		"outFolderPath": "lib-esm"
-	// 	}
-	// ],
+	"additionalModuleKindsToEmit": [
+		// {
+		//   /**
+		//    * (Required) Must be one of "commonjs", "amd", "umd", "system", "es2015", "esnext"
+		//    */
+		//  "moduleKind": "amd",
+		//
+		//   /**
+		//    * (Required) The path where the output will be written.
+		//    */
+		//    "outFolderPath": "lib-amd"
+		// }
+		{
+			"moduleKind": "esnext",
+			"outFolderName": "lib-esm"
+		}
+	],
 	/**
    * Specifies the intermediary folder that Jest will use for its input.  Because Jest uses the
    * Node.js runtime to execute tests, the module format must be CommonJS.

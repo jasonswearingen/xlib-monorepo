@@ -22,3 +22,7 @@ export function f( name: string ): string {
 
 import * as net from "./net"
 export { net }
+
+
+import * as _imports from "./_imports"
+export { _imports }

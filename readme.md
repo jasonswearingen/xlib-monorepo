@@ -20,11 +20,17 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
 - publishing:  ensure xlib ecosystem can be published to npm
 - basic react e2e: proof of concept using react to setup a real app (including ssl and dev vs production env)
 - documentation:  proper code documentation, auto-gen from source
+  - functional doc system using ```api-extractor``` via the ```@xlib/xlib-docs``` website project.
+  - if we need to change in the future, consider using https://github.com/tgreyuk/typedoc-plugin-markdown
 - doc site:  a documenation site with full text search and versioning
 - modern promise libary
 
 
 # development
+
+## tagline
+Your isomorphic, swiss army knife, utility library
+
 
 ## env setup
 - core dev env
@@ -38,6 +44,13 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
   - day.js probably (maybe luxon)
 - net io
   - gaxios
+- webworkers
+  - threads.js
+- serialization
+  - need to add benchmarks for
+    - msgpack
+    - simdjson
+    - json5
 
 
 # scratch
@@ -56,3 +69,5 @@ work here will be ported to the current ```xlib``` repository once R&D has met t
 ## promises
 - probably can use native promises now (bluebird not needed): https://dev.to/blacksonic/what-does-javascript-promise-us-for-2020-4l1i
 
+
+  
