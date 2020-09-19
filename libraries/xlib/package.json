@@ -13,7 +13,7 @@
   "libEsmEntry": "lib-esm/_main.js",
   "typings": "lib/_main.d.ts",
   "scripts": {
-    "build": "heft test && pnpm run build-rollup",
+    "build": "heft test",
     "build-clean": "heft clean && pnpm run build",
     "build-rollup": "rollup --config ./lib-esm/_rollup.config.js",
     "watch-rollup": "rollup --config ./lib-esm/_rollup.config.js --watch --watch.buildDelay 500",

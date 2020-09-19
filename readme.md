@@ -37,7 +37,7 @@ Your isomorphic, swiss army knife, utility library
   - install node 14.x
   - ```npm install -g pnpm @microsoft/rush```
 - supplemental build tooling
-  -  ```npm install -g npm-check-updates @microsoft/api-extractor @microsoft/api-documenter concurrently```
+  -  ```npm install -g npm-check-updates  concurrently  ```  //was: jest @microsoft/api-extractor @microsoft/api-documenter
 
 # REWRITE NOTES
 - date

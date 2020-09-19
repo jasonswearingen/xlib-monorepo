@@ -58,6 +58,7 @@
    */
   "bundledPackages": [
     "gaxios",
+    //"threads", //! can not include threads due to type bug
   ],
   /**
    * Determines how the TypeScript compiler engine will be invoked by API Extractor.
