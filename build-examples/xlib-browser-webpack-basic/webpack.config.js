@@ -2,6 +2,7 @@
 
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ThreadsPlugin = require('threads-plugin');
 
 /**
  * If the "--production" command-line parameter is specified when invoking Heft, then the
@@ -31,7 +32,7 @@ function createWebpackConfig({ production }) {
         {
           test: /\.js$/,
           enforce: 'pre',
-          use: ['source-map-loader'], //needed to chain sourcemaps
+          use: ['source-map-loader'], //needed to chain sourcemaps.  see: https://webpack.js.org/loaders/source-map-loader/
         },
       ]
     },
@@ -55,17 +56,21 @@ function createWebpackConfig({ production }) {
       // See here for documentation: https://github.com/jantimon/html-webpack-plugin
       new HtmlWebpackPlugin({
         template: 'assets/index.html'
-      })
+      }),
+      new ThreadsPlugin(),
     ],
 
-    //from https://github.com/googleapis/gaxios/blob/master/webpack.config.js
-    //needed to support gaxios
+
     node: {
+      //from https://github.com/googleapis/gaxios/blob/master/webpack.config.js
+      //needed to support gaxios
       child_process: 'empty',
       fs: 'empty',
       crypto: 'empty',
       net: 'empty',
       tls: 'empty',
+
+      "ts-node": "empty",
     }
 
   };

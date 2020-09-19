@@ -34,3 +34,11 @@ pnpm install -g npm-check-updates #per-project command added in config/rush/comm
 
 # debug visualizer
 https://addyosmani.com/blog/visualize-data-structures-vscode/
+
+
+# troubleshooting
+- webpack failure with ```No template for dependency: ConstDependency```:
+  - heft webpack version is out of date with locally installed version.
+  - find heft webpack version by running it (version is emitted in console output) then update project, for example: ```rush add -p webpack@4.31.0 -m```
+
+  

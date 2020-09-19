@@ -38,28 +38,29 @@ const config: rollup.RollupOptions[] = [
 		plugins: [
 			resolve(), // so Rollup can find 3rd party modules
 			commonjs(), // so Rollup can convert modules to an ES module
-			sourcemaps(), //so rollup can chain sourcemaps to source .ts files
-		]
+			sourcemaps(), //so rollup can chain sourcemaps to source .ts files. 
+		],
+		external: "ts-node"
 	},
-	// CommonJS (for Node) and ES module (for bundlers) build.
-	// (We could have three entries in the configuration array
-	// instead of two, but it's quicker to generate multiple
-	// builds from a single configuration where possible, using
-	// an array for the `output` option, where we can specify
-	// `file` and `format` for each target)
-	{
-		input: pkg.libEsmEntry,
-		//external: [ "ms" ],
-		output: {
-			file: pkg.module,
-			format: "esm",
-			...outputDefaults
-		}
-		// 	[
-		// 	{ file: pkg.main, format: "cjs" },
-		// 	{ file: pkg.module, format: "es" }
-		// ]
-	}
+	// // CommonJS (for Node) and ES module (for bundlers) build.
+	// // (We could have three entries in the configuration array
+	// // instead of two, but it's quicker to generate multiple
+	// // builds from a single configuration where possible, using
+	// // an array for the `output` option, where we can specify
+	// // `file` and `format` for each target)
+	// {
+	// 	input: pkg.libEsmEntry,
+	// 	//external: [ "ms" ],
+	// 	output: {
+	// 		file: pkg.module,
+	// 		format: "esm",
+	// 		...outputDefaults
+	// 	}
+	// 	// 	[
+	// 	// 	{ file: pkg.main, format: "cjs" },
+	// 	// 	{ file: pkg.module, format: "es" }
+	// 	// ]
+	// }
 
 ]
 
