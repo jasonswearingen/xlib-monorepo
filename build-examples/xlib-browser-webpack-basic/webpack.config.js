@@ -8,12 +8,14 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
  * "production" function parameter will be true.  You can use this to enable bundling optimizations.
  */
 function createWebpackConfig({ production }) {
+  production = false
   const webpackConfig = {
     // Documentation: https://webpack.js.org/configuration/mode/
     mode: production ? 'production' : 'development',
     resolve: {
-      extensions: ['.js', '.jsx', '.json']
+      extensions: ['.js', '.jsx', '.json'],
     },
+
     module: {
       rules: [
         {
@@ -25,7 +27,12 @@ function createWebpackConfig({ production }) {
           //needed to support gaxios
           test: /node_modules\/https-proxy-agent\//,
           use: "null-loader",
-        }
+        },
+        {
+          test: /\.js$/,
+          enforce: 'pre',
+          use: ['source-map-loader'], //needed to chain sourcemaps
+        },
       ]
     },
     entry: {
@@ -38,7 +45,7 @@ function createWebpackConfig({ production }) {
       path: path.join(__dirname, 'dist'),
       filename: '[name]_[contenthash].js'
     },
-    devtool: production ? undefined : 'source-map',
+    devtool: production ? undefined : 'inline-source-map',
     plugins: [
       // See here for documentation: https://github.com/jantimon/html-webpack-plugin
       new HtmlWebpackPlugin({

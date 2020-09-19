@@ -32,3 +32,5 @@ pnpm install -g npm-check-updates #per-project command added in config/rush/comm
   - as per: https://rushstack.io/pages/heft_tasks/webpack/
 
 
+# debug visualizer
+https://addyosmani.com/blog/visualize-data-structures-vscode/
