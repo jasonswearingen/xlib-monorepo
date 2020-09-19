@@ -6,8 +6,8 @@
   "typings": "lib/_main.d.ts",
   "scripts": {
     "start": "node lib/_main.js",
-    "build": "heft test --clean",
-    "heft": "heft",
+    "build": "heft test",
+    "build-clean": "heft test --clean",
     "watch": "heft build --clean ; CI=true heft test --watch",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
     "dep-check-major": "npm-check-updates --configFilePath ../../common/config",

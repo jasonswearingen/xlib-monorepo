@@ -6,10 +6,8 @@
 		"types": [
 			"node",
 			"jest",
-			//"ky-universal",
-			//"ky"
 		],
-		"lib": [  //see: https://www.typescriptlang.org/tsconfig#lib
+		"lib": [ //see: https://www.typescriptlang.org/tsconfig#lib
 			//"es5",
 			"ScriptHost",
 			// "es2015.collection",
@@ -19,7 +17,8 @@
 			//"ES2017",
 			"ESNext",
 			"WebWorker",
-		]
+		],
+		"resolveJsonModule": true
 	},
 	"include": [
 		"src/**/*.ts",

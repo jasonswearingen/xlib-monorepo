@@ -10,7 +10,6 @@
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "serve": "docusaurus serve",
-    "heft": "heft",
     "eslint-fix": "",
     "dep-check-major": "npm-check-updates --configFilePath ../../common/config",
     "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor"
