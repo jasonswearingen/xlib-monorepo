@@ -1,6 +1,6 @@
-console.log( "Hello, worlds" )
+console.log( "Hello, maxium!!!" )
 
-export const hello = "world wtf?!!"
+export const hello = "world wtf?!!!"
 
 /** the world always says
  * @public

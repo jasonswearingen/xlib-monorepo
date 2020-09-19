@@ -15,8 +15,10 @@
   "scripts": {
     "build": "heft test",
     "build-clean": "heft test --clean",
-    "build-browser": "rollup --config ./lib-esm/_rollup.config.js",
-    "watch": "heft build --clean && CI=true heft test --watch",
+    "build-rollup": "rollup --config ./lib-esm/_rollup.config.js",
+    "watch-rollup": "rollup --config ./lib-esm/_rollup.config.js --watch --watch.buildDelay 500",
+    "watch-build": "CI=true heft build --watch",
+    "watch": "pnpm run build-clean && concurrently --kill-others \"pnpm run watch-build\" \"pnpm run watch-rollup\"",
     "eslint-fix": "eslint ./src/**/*.ts* --fix",
     "dep-check-major": "npm-check-updates --configFilePath ../../common/config",
     "dep-check": "npm-check-updates --configFilePath ../../common/config --target minor",

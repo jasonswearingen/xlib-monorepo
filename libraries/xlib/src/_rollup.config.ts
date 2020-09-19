@@ -13,7 +13,7 @@ const outputDefaults: rollup.OutputOptions = {
 	//optimize
 	compact: false,
 	minifyInternalExports: false,
-	sourcemap: "inline",
+	sourcemap: true,
 
 	//huh?
 	/**
@@ -53,6 +53,7 @@ const config: rollup.RollupOptions[] = [
 		output: {
 			file: pkg.module,
 			format: "esm",
+			...outputDefaults
 		}
 		// 	[
 		// 	{ file: pkg.main, format: "cjs" },

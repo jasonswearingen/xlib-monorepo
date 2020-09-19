@@ -45,7 +45,12 @@ function createWebpackConfig({ production }) {
       path: path.join(__dirname, 'dist'),
       filename: '[name]_[contenthash].js'
     },
-    devtool: production ? undefined : 'inline-source-map',
+    devtool: production ? undefined : 'source-map',
+    // // not needed:
+    // devServer: {
+    //   contentBase: path.join(__dirname, "../.."),
+    //   watchContentBase: true,
+    // },
     plugins: [
       // See here for documentation: https://github.com/jantimon/html-webpack-plugin
       new HtmlWebpackPlugin({
